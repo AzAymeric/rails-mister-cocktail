@@ -1,1 +1,55 @@
 // Specific CSS for your home-page
+h1 {
+  font-family: arial;
+  font-size: 50px;
+}
+
+h2 {
+  font-family: arial;
+
+}
+
+.banner {
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+}
+
+.banner h1 {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.btn-primary {
+  display: inline-block;
+    background-color: #FE5F55;
+    padding: 16px 36px;
+    border-radius: 50px;
+    color: white;
+}
+
+.btn-primary:hover {
+  background-color: #EF233C;
+}
+
+.cards {
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.cards > img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.cards li {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+

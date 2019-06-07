@@ -1,15 +1,19 @@
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://cdn.pixabay.com/photo/2013/10/31/13/42/glass-203462_1280.jpg);">
+  <div class="container">
+    <h1>Welcome at cocktailz</h1>
+    <%= link_to "Add a new Cocktail", new_cocktail_path, class: 'btn btn-primary' %>
+  </div>
+</div>
 <div class="container">
   <div class="row">
     <div class="col-xs-12 col-sm-10 col-sm-offset-1">
-      <h1>All cocktails</h1>
-      <ul class="list-group">
-        <% @cocktails.each do |cocktail| %>
+      <% @cocktails.each do |cocktail| %>
+        <div class="cards">
           <li class="list-group-item">
             <%= link_to cocktail.name, cocktail_path(cocktail) %>
           </li>
-        <% end %>
-      </ul>
-      <%= link_to "Add a new Cocktail", new_cocktail_path, class: 'btn btn-primary' %>
+        </div>
+      <% end %>
     </div>
   </div>
 </div>
